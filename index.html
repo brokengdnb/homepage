@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrokenG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='/materialize.min.css' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="BrokenG">
+    <meta name="application-name" content="BrokenG">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#000000">
+
+    <style>
+        #modal1 {
+            width: 70%;
+            background-color: white;
+        }
+
+        .btn, .btn-large {
+            /*           background-color: rgb(84,25,4) !important; */
+
+        }
+
+        body {
+           background-image:url('/img/back.png');
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-position:center;
+            background-attachment:fixed;
+        }
+
+    </style>
+</head>
+<body>
+<!-- **** Adv Cards in Basic Grid Layout ****-->
+<main >
+    <div class="row" style="width: 95%; margin-top: 18px">
+
+
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer" style="top: 5% !important;max-height: 80%; height: 80%;">
+            <div class="modal-content" style="padding: 0 !important;" id="cv-container">
+                <canvas id="holder" style="width: 100%"></canvas>
+            </div>
+            <div class="modal-footer">
+                <a class="btn waves-effect waves-green" href="http://brokeng.com/test.pdf" download="CV_Jakub_Krizka.pdf" target="_blank" >Download .pdf</a>
+                <a class="modal-close btn-flat">Close</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modalMe" class="modal modal-fixed-footer" style="top: 5% !important;max-height: 80%; height: 80%;">
+            <div class="modal-content" style="padding: 0 !important;">
+<!--
+               <iframe frameborder="0" scrolling="yes" onload="this.style.height=(this.contentWindow.document.body.scrollHeight+20)+'px';" src="http://blog.brokeng.com/project/2020/03/17/me/" style="width: 100%; height: 100%"></iframe>
+-->
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close btn-flat">Close</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modalAva" class="modal modal-fixed-footer" style="top: 5% !important;max-height: 80%; height: 80%;">
+            <div class="modal-content col">
+                <h4>AVA - Audio & Video Administration</h4>
+                <div class="divider"></div>
+
+                <p>The idea was before I even start to speak english, the master idea of everything in their own space as well as place. Multimedia database to be ready for parse &render any idea/content on a go to multiple devices in a real time. Also provide import/export all of playlists, render 2D map of connections between each other.</p>
+
+            </div>
+            <div class="modal-footer">
+                <a class="modal-close btn-flat">Close</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modalEmi" class="modal modal-fixed-footer" style="top: 5% !important;max-height: 80%; height: 80%;">
+            <div class="modal-content col">
+                <div class="col s6 m6 l8">
+                    <h5>EMI - Elegant Mixing Interface</h5>
+                    <div class="divider"></div>
+
+                    <p> There was only one reason for this project, mess on my screen while I was mixing music in a DJ software program. So I just start from zero, find open source projects, forked them and edited for my needs and purpose on a go. Layers, over another, over another, etc based on position between points of mixing progress. Special custom mappings to fit sensitivity of my controller Behringer CMD-PL1.</p>
+                </div>
+                <div class="col s6 m6 l4">
+<!--
+                    <video src="/video/emi.mp4" style="width: 100%" controls="controls" preload="none"></video>
+-->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a class="modal-close btn-flat">Close</a>
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="modalR23" class="modal modal-fixed-footer" style="top: 5% !important;max-height: 80%; height: 80%;">
+            <div class="modal-content col">
+                <h5>Room23</h5>
+                <p>From one point of view it's just combination of all my previous projects, from the other side it's just another level going more portable and green path. But more like it's just open source portable recording and DJ stage with party for like ~50 people on a go for like a whole weekend without electricity. In a small container, truck, SUV, Caravan... completely independent.</p>
+
+            </div>
+            <div class="modal-footer">
+                <a class="modal-close btn-flat">Close</a>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+
+            <!-- reveal card #1 -->
+            <div class="card sticky-action">
+                <!--  card image -->
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="/img/vinyl.jpg">
+                </div>
+
+                <!--  card title, content and reveal icon -->
+
+                <div class="card-content" >
+                    <span class="card-title activator grey-text text-darken-4">Multimedia</span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">sound system | music | drums | melody</p>
+                </div>
+
+
+
+                <!--  card reveal content -->
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Last live stream<i class="material-icons right">close</i></span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+
+                    <video src="/video/demo.mp4" style="width: 100%" poster="/video/demo.png" controls="controls" preload="none"></video>
+
+<br><br>
+                    <span class="card-title grey-text text-darken-4">Last beats</span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+
+                    <video src="/video/beats.mov" style="width: 100%" poster="/video/beats.png" controls="controls" preload="none"></video>
+
+<br><br>
+                    <span class="card-title grey-text text-darken-4">Last melody</span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+
+                    <p style="">Dreamstation (Demo) - another night, another dream, again... dream about her... but this time there was a melody with special timing and tones, not compatible with basic sheets, so hard and so easy at the same time, all in & out just for you my love, meet me... another day, another dream, you know where to find me.</p>
+                    <video src="/video/dreamstation-480.mov" poster="/video/dreamstation-480.png" style="width: 100%" controls="controls" preload="none"></video>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col s12 m6 l4">
+
+            <!-- reveal card #1 -->
+            <div class="card sticky-action">
+                <!--  card image -->
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="/img/mic.jpg">
+                </div>
+
+                <!--  card title, content and reveal icon -->
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Radio</span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">24/7 | D&B | EDM | Podcasts</p>
+                </div>
+
+                <!--  card reveal content -->
+                <div class="card-reveal" style="background-color: black; color:white; background-image: url('/img/18.jpg'); background-position: center center; background-repeat: no-repeat;">
+                    <span class="card-title grey-text text-darken-4" style="z-index:3;color: white !important;">Coming Jul/21<i class="material-icons right" style="color: white">close</i></span>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col s12 m6 l4">
+
+            <!-- reveal card #1 -->
+            <div class="card sticky-action">
+                <!--  card image -->
+                <div class="card-image waves-effect waves-block waves-light" style="margin-bottom: -1px">
+                    <img class="activator" src="/img/pen.jpg">
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Contact</span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">social links | CV | blog</p>
+                </div>
+
+                <!--  card reveal content -->
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Connect with<i class="material-icons right">close</i></span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+
+                    <div style="width:100%; text-align: center; margin-bottom: 18px">
+                        <a href="https://wa.me/+31627960875" target="_blank"><img src="/img/icon-wa.png" width="48"/></a>
+                        <a href="http://m.me/geenloop" target="_blank"><img src="/img/icon-ms.png" width="48"/></a>
+                        <a href="https://www.twitter.com/odbsound/" target="_blank"><img src="/img/icon-tw.png" width="48"/></a>
+                        <a href="https://www.pinterest.com/crossdjinn/" target="_blank"><img src="/img/icon-pn.png" width="48"/></a>
+                    </div>
+
+
+
+                    <span class="card-title grey-text text-darken-4">Blog<i></i></span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+                    <a href="http://blog.brokeng.com" target="_blank"><img style="width: 100%" src="/img/blog.png"/></a>
+
+                    <span class="card-title grey-text text-darken-4">Resume <i>~80 kB</i></span>
+                    <div class="divider" style="margin-bottom: 18px"></div>
+                    <div>
+<!--
+                        <a class="btn modal-trigger" href="#modal1" >View</a>
+-->
+                        <a class="btn waves-green waves-effect" target="_blank" href="http://brokeng.com/test.pdf" download="CV_Jakub_Krizka.pdf">Download .pdf</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="col s12 m6 l8">
+
+            <!-- reveal card #2 -->
+            <div class="card sticky-action">
+                <!--  card image -->
+                <div class="card-image waves-effect waves-block waves-light" style="margin-bottom: -1px">
+                    <img class="activator" src="/img/circuits.jpg">
+                </div>
+
+                <!--  card title, content and reveal icon -->
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Personal Projects</span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">AVA | EMI | Room23</p>
+                </div>
+
+
+
+                <!--  card reveal content -->
+                <div class="card-reveal" style="padding-bottom: 0">
+                    <span class="card-title grey-text text-darken-4">Personal Projects<i class="material-icons right">close</i></span>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th data-field="date">Name</th>
+                            <th data-field="dance-type">Since</th>
+                            <th data-field="dance-type">Target</th>
+                            <th data-field="time">Technology</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td><a class="modal-trigger" href="http://blog.brokeng.com/project/ava-data" target="_blank">AVA-DATA</a></td>
+                            <td>8/2013</td>
+                            <td>server Linux, OS X</td>
+                            <td>MongoDB, Node.js, REST-API</td>
+                        </tr>
+                        <tr>
+                            <td><a class="modal-trigger" href="http://blog.brokeng.com/project/emi" target="_blank">EMI</a></td>
+                            <td>11/2016</td>
+                            <td>BSD, OS X</td>
+                            <td>C++, ES5, CSS3, MIDI</td>
+                        </tr>
+                        <tr>
+                            <td><a class="modal-trigger" href="http://blog.brokeng.com/project/ava-tv" target="_blank">AVA-TV & Control</a></td>
+                            <td>1/2018</td>
+                            <td>TV, iOS, Android</td>
+                            <td>AngularJS, Socket.IO, Material</td>
+                        </tr>
+                        <tr>
+                            <td><a class="modal-trigger" href="http://blog.brokeng.com/project/me" target="_blank">ME</a></td>
+                            <td>3/2020</td>
+                            <td>OS X (App)</td>
+                            <td>Markdown editor, ElectronJS</td>
+                        </tr>
+                        <tr>
+                            <td>Room23</td>
+                            <td>6/2020</td>
+                            <td>Portable recording studio</td>
+                            <td>in-progress</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--<div class="col s12 m6 l4">
+
+            &lt;!&ndash; reveal card #2 &ndash;&gt;
+            <div class="card sticky-action">
+                &lt;!&ndash;  card image &ndash;&gt;
+                <div class="card-image waves-effect waves-block waves-light" style="margin-bottom: -1px">
+                    <img class="activator" src="http://localhost:63342/homev3/contact.jpg">
+                </div>
+
+                &lt;!&ndash;  card title, content and reveal icon &ndash;&gt;
+
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Contact me<i class="material-icons right">more_vert</i></span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;">social media | urls | form | e-mail</p>
+                </div>
+
+
+                &lt;!&ndash;  card reveal content &ndash;&gt;
+                <div class="card-reveal">
+
+                    <span class="card-title grey-text text-darken-4">Contacts<i class="material-icons right">close</i></span>
+
+                    <div class="divider"></div>
+
+
+                </div>
+            </div>
+        </div>-->
+
+        <div class="col s12 m6 l4">
+
+            <!-- reveal card #2 -->
+            <div class="card sticky-action">
+                <!--  card image -->
+                <div class="card-image waves-effect waves-block waves-light" style="margin-bottom: -1px">
+                    <img class="activator" src="/img/copyright.png">
+                </div>
+
+                <!--  card title, content and reveal icon -->
+
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Copyright</span>
+                    <p class="activator" style="white-space: nowrap;overflow: hidden !important;text-overflow: ellipsis;"> mixed | BrokenG | 2020</p>
+                </div>
+
+
+                <!--  card reveal content -->
+                <div class="card-reveal">
+
+                    <span class="card-title grey-text text-darken-4">The GNU GPL<i class="material-icons right">close</i></span>
+                    <div class="divider"></div>
+                    <p> is a series of widely-used free software licenses that guarantee end users the freedom to run, study, share, and modify the software. <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">More info</a></p>
+
+<br>
+                    <span class="card-title grey-text text-darken-4">Creative Commons Attribution 4.0 International license</span>
+                    <div class="divider"></div>
+                    <p> This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">More info</a></p>
+
+                    <br>
+
+                    <span class="card-title grey-text text-darken-4">MIT License</span>
+                    <div class="divider"></div>
+                    <p> is one of the most permissive free software licenses. Basically, you can do whatever you want with software licensed under the MIT license - only if you add a copy of the original MIT license and copyright notice to it. Its simplicity is the reason behind its high adoption rate among developers. <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">More info</a></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+
+            <span class="footer-copyright"></span>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</main>
+
+
+<script src="/jquery.min.js"></script>
+<script src="/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('#modalAva').modal({
+
+            opacity: .7, // Opacity of modal background
+
+            ready: function() {
+
+            }, // Callback for Modal open
+            complete: function() { } // Callback for Modal close
+        })
+
+    $('#modalMe').modal({
+
+            opacity: .8, // Opacity of modal background
+
+            ready: function() {
+
+            }, // Callback for Modal open
+            complete: function() { } // Callback for Modal close
+        })
+
+
+        $('.modal').modal({
+
+            opacity: .7, // Opacity of modal background
+
+            ready: function() {
+
+
+/*
+
+                //
+                // If absolute URL from the remote server is provided, configure the CORS
+                // header on that server.
+                //
+                var url = 'http://brokeng.com/test.pdf';
+
+                //
+                // The workerSrc property shall be specified.
+                //
+                pdfjsLib.GlobalWorkerOptions.workerSrc =
+                    'http://brokeng.com/pdf.worker.js';
+
+                //
+                // Asynchronous download PDF
+                //
+                var loadingTask = pdfjsLib.getDocument(url);
+                loadingTask.promise.then(function(pdf) {
+                    //
+                    // Fetch the first page
+                    //
+                    pdf.getPage(1).then(function(page) {
+                        var scale = 3;
+                        var viewport = page.getViewport({ scale: scale, });
+
+                        //
+                        // Prepare canvas using PDF page dimensions
+                        //
+                        var canvas = document.getElementById('holder');
+                        var context = canvas.getContext('2d');
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+
+                        //
+                        // Render PDF page into canvas context
+                        //
+                        var renderContext = {
+                            canvasContext: context,
+                            viewport: viewport,
+                        };
+                        page.render(renderContext);
+                    });
+                });
+*/
+
+
+            }, // Callback for Modal open
+            complete: function() { } // Callback for Modal close
+        })
+
+
+
+    });
+</script>
+</body>
+</html>
